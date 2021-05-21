@@ -42,6 +42,7 @@ module.exports = {
 
   NUMERIC_SORT: (a, b) => a - b,
   STRING_SORT: (a, b) => getNumber(a) - getNumber(b),
+  FORMAT_SQL: (sql) => sql.replace(/"/g, '`'),
 
   initialize: function (knexConfig) {
     const knex = Knex(knexConfig);
@@ -229,10 +230,6 @@ function createModels(knex) {
   class Person extends objection.Model {
     static get tableName() {
       return 'Person';
-    }
-
-    firstName() {
-      return this.firstName + ' ' + this.lastName;
     }
 
     static get relationMappings() {
