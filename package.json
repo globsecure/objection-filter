@@ -1,6 +1,6 @@
 {
   "name": "objection-filter",
-  "version": "4.3.2",
+  "version": "4.3.3",
   "description": "A filter module for objection.js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -77,6 +77,6 @@
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
-    "objection": "^2.1.2"
+    "objection": "^2.1.2 || ^3.0.0"
   }
 }
