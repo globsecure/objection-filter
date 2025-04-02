@@ -26,8 +26,7 @@ module.exports = {
         host: '127.0.0.1',
         database: 'objection_filter_test',
         user: 'postgres',
-        password: 'postgres',
-        port: 5438
+        password: 'postgres'
       },
       pool: {
         min: 0,
@@ -39,7 +38,6 @@ module.exports = {
       connection: {
         host: '127.0.0.1',
         user: 'root',
-        password: '123456',
         database: 'objection_filter_test',
         decimalNumbers: true
       },
